@@ -1,0 +1,114 @@
+.App-header{
+  width: 100px;
+  min-width: 100px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  // background: rgb(0, 0, 0);
+
+  background-color: rgba(33,33,33,var(--tw-bg-opacity));
+  transition-duration: .5s;
+  border-bottom-right-radius: 1.5rem;
+  &:hover{
+    width: 220px;
+    min-width: 220px;
+    .side-nav-header {
+      .logo-text{
+        opacity: 1;
+        margin-top: 50px;
+        transition-delay: .3s;
+      }
+    }
+    .side-nav{
+      .side-nav-label{
+        transform: translateX(0px);
+        opacity: 1;
+      }
+    }
+  }
+  .side-nav-header{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .logo{
+      height: 35px;
+    }
+    .logo-text{
+      height: 15px;
+      position: absolute;
+      transition: all .5s;
+      opacity: 0;
+    }
+  }
+
+  .side-nav{
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+
+    .side-nav-link{
+      color: #fff;
+      width: 100%;
+      outline: none;
+      --tw-bg-opacity: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .menu-icons{
+        fill: currentColor;
+        color: #9e9e9e;
+      }
+
+      .side-nav-title{
+        margin-left: 25px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        padding: 0.65rem;
+        position: relative;
+        width: 100%;
+
+        .side-nav-label{
+          width: 100%;
+          text-align: center;
+          font-size: 16px;
+          position: absolute;
+          transform: translateX(45px);
+          opacity: 0;
+          white-space: nowrap;
+          transition: all 1s ease-in;
+        }
+      }
+
+    }
+
+
+  }
+}
+
+// fill-current text-gray-500
+
+// .App-header:hover{
+//   width: 220px;
+//   min-width: 220px;
+// }
+
+// .side-nav-header{
+//   height: 70px;
+// }
+
+.side-nav-header{}
+
+.logo{
+  height: 35px;
+  transition: all .3s;
+}
